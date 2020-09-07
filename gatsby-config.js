@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'にわかストリートジャーナル',
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      '「モダンで読みやすい文章」を発信しているWebサイト',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -34,6 +34,7 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
+        plugins: [`gatsby-remark-responsive-iframe`],
         plugins: [
           {
             resolve: 'gatsby-remark-relative-images',
