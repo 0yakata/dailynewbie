@@ -4,7 +4,7 @@ title: テスト
 date: 2020-09-13T14:46:48.456Z
 description: The Coffee Taster’s Flavor Wheel, the official resource used by
   coffee tasters, has been revised for the first time this year.
-featuredpost: true
+featuredpost: false
 featuredimage: /img/flavor_wheel.jpg
 tags:
   - 特集
