@@ -3,12 +3,14 @@ templateKey: about-page
 path: /about
 title: メンバー紹介
 ---
-#### 高丸ヘッド
+![](/img/note.svg)
 
-<img src="https://www.dailynewbie.com/img/twitter.svg" width=50%>
+##### 高丸ヘッド
 
-#### ムセン
+<img src="https://www.dailynewbie.com/img/twitter.svg" width=24>
 
-#### 付箋
+##### ムセン
 
-#### バリー
+##### 付箋
+
+##### バリー
