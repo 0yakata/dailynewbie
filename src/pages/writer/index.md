@@ -3,7 +3,7 @@ templateKey: about-page
 path: /about
 title: メンバー紹介
 ---
-![](/img/note.svg)
+![](/img/note.png)
 
 ##### 高丸ヘッド
 
