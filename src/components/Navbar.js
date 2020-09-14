@@ -62,6 +62,9 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/blog">
                 最近の記事
               </Link>
+              <Link className="navbar-item" to="/tags">
+                タグ一覧
+              </Link>
               <Link className="navbar-item" to="/writer">
                 メンバー紹介
               </Link>
