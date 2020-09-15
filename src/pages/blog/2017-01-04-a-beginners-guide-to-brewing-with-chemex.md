@@ -8,8 +8,8 @@ description: Brewing with a Chemex probably seems like a complicated,
 featuredpost: false
 featuredimage: /img/chemex.jpg
 tags:
-  - brewing
-  - chemex
+  - 特集
+  - 日記
 ---
 ![chemex](/img/chemex.jpg)
 
