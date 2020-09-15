@@ -9,7 +9,7 @@ title: メンバー紹介
 
 **ムセン** @0yen_LAN
 
-<a href="https://twitter.com/0yen_LAN" target="_blank" rel="noopener noreferrer"><img src="https://www.dailynewbie.com/img/twitter.svg" width=24></a>
+<a href="https://twitter.com/0yen_LAN" target="_blank" rel="noopener noreferrer"><img src="https://www.dailynewbie.com/img/twitter.svg" width=24></a>&nbsp;
 <a href="https://ultimate072.blog.fc2.com/" target="_blank" rel="noopener noreferrer"><img src="https://www.dailynewbie.com/img/homepage.svg" width=24></a>
 <a href="https://note.com/0yen_lan" target="_blank" rel="noopener noreferrer"><img src="https://www.dailynewbie.com/img/note.svg" width=24></a>
 <br>
