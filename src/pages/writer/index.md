@@ -1,6 +1,6 @@
 ---
-templateKey: about-page
-path: /about
+templateKey: writer-page
+path: /writer
 title: メンバー紹介
 ---
 **高丸ヘッド** @takamaru_head

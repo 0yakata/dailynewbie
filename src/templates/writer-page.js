@@ -8,16 +8,17 @@ export const WriterPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="content">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
-            </div>
+    <section className="section">
+      <div className="container content">
+        <div className="columns">
+          <div
+            className="column is-10 is-offset-1"
+            style={{ marginBottom: '6rem' }}
+          >
+            <h3 className="title is-size-3 has-text-weight-bold is-bold-light">
+              {title}
+            </h3>
+            <PageContent className="content" content={content} />
           </div>
         </div>
       </div>

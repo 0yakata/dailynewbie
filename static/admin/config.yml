@@ -41,6 +41,6 @@ collections:
         label: "Writer"
         name: "writer"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "writer-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
