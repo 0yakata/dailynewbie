@@ -19,11 +19,6 @@ const Footer = class extends React.Component {
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/blog">
-                        最近の記事
-                      </Link>
-                    </li>
-                    <li>
                       <Link className="navbar-item" to="/tags">
                         タグ一覧
                       </Link>

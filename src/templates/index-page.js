@@ -8,10 +8,14 @@ export const IndexPageTemplate = ({
   title
 }) => (
   <div>
-    <section className="section">
-      <div className="container content">
-        <div className="columns">
-          <BlogRoll />
+    <section className="section section--gradient">
+      <div className="container">
+        <div className="section">
+          <div className="columns">
+            <div className="content">
+              <BlogRoll />
+            </div>
+          </div>
         </div>
       </div>
     </section>
