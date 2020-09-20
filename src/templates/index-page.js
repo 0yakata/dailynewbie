@@ -12,8 +12,10 @@ export const IndexPageTemplate = ({
       <div className="container">
         <div className="section">
           <div className="columns">
-            <div className="content">
-              <BlogRoll />
+            <div className="column is-12">
+              <div className="content">
+                <BlogRoll />
+              </div>
             </div>
           </div>
         </div>
