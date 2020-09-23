@@ -6,4 +6,4 @@
   NODE_VERSION = "12"
   YARN_VERSION = "1.22.4"
   YARN_FLAGS = "--no-ignore-optional"
-  TZ="UTC+6:00"
+  TZ="Asia/Tokyo"
