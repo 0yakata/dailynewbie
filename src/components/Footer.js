@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import twitter from '../img/social/twitter.svg'
+import logo from '../img/logo.svg'
 
 const Footer = class extends React.Component {
   render() {
@@ -37,6 +38,7 @@ const Footer = class extends React.Component {
                 </section>
               </div>
               <div className="column is-4 social">
+                <p><img src={logo} alt="NSJ" style={{ width: '200px' }} /></p>
                 <a title="twitter" href="https://twitter.com/DailyNewbie" target="_blank" rel="noopener noreferrer">
                   <img
                     className="fas fa-lg"
