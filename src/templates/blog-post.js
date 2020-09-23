@@ -23,7 +23,7 @@ export const BlogPostTemplate = ({
   tags,
   title,
   helmet,
-  url
+  url,
 }) => {
   const PostContent = contentComponent || Content
 
@@ -87,10 +87,10 @@ export const BlogPostTemplate = ({
                 </ul>
               </div>
             ) : null}
-            <div style={{ marginTop: `2rem` }}>
+            {/* <div style={{ marginTop: `2rem` }}>
               <h4>シェア</h4>
               <SNSSection title={title} articleUrl={url} />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -127,7 +127,7 @@ const BlogPost = ({ data }) => {
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
         date={post.frontmatter.date}
-        url={post.frontmatter.url}
+        url={URL}
       />
     </Layout>
   )
