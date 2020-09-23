@@ -87,10 +87,10 @@ export const BlogPostTemplate = ({
                 </ul>
               </div>
             ) : null}
-            {/* <div style={{ marginTop: `2rem` }}>
+            <div style={{ marginTop: `2rem` }}>
               <h4>シェア</h4>
-              <SNSSection title={title} articleUrl={url} />
-            </div> */}
+              <SNSSection title={title+' | にわかストリートジャーナル'} articleUrl={url} />
+            </div>
           </div>
         </div>
       </div>
@@ -127,7 +127,7 @@ const BlogPost = ({ data }) => {
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
         date={post.frontmatter.date}
-        url={URL}
+        url={window.location.href}
       />
     </Layout>
   )
@@ -151,7 +151,6 @@ export const pageQuery = graphql`
         title
         description
         tags
-        url
       }
     }
   }
