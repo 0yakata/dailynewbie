@@ -24,14 +24,14 @@ class BlogRoll extends React.Component {
                       <PreviewCompatibleImage
                         imageInfo={{
                           image: post.frontmatter.featuredimage,
-                          alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                          alt: `${post.frontmatter.title}`,
                         }}
                       />
                     </div>
                   ) : null}
                   <p className="post-meta">
                     <Link
-                      className="title is-size-5"
+                      className="title is-size-4"
                       to={post.fields.slug}
                     >
                       {post.frontmatter.title}
@@ -87,8 +87,8 @@ export default () => (
                 date(formatString: "YYYY/MM/DD")
                 featuredimage {
                   childImageSharp {
-                    sizes(maxWidth: 300) {
-                      ...GatsbyImageSharpSizes
+                    fluid(maxWidth: 200, quality: 100) {
+                      ...GatsbyImageSharpFluid
                     }
                   }
                 }
