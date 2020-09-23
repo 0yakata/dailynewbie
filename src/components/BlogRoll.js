@@ -31,7 +31,7 @@ class BlogRoll extends React.Component {
                   ) : null}
                   <p className="post-meta">
                     <Link
-                      className="title is-size-4"
+                      className="title is-size-5"
                       to={post.fields.slug}
                     >
                       {post.frontmatter.title}
@@ -87,8 +87,8 @@ export default () => (
                 date(formatString: "YYYY/MM/DD")
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 200, quality: 100) {
-                      ...GatsbyImageSharpFluid
+                    sizes(maxWidth: 300) {
+                      ...GatsbyImageSharpSizes
                     }
                   }
                 }
