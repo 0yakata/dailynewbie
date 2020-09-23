@@ -4,6 +4,8 @@ import PropTypes from 'prop-types'
 import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
 
+import { graphql } from 'gatsby'
+
 export const IndexPageTemplate = ({
   title
 }) => (
