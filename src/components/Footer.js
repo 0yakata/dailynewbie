@@ -49,6 +49,8 @@ const Footer = class extends React.Component {
                 </a>
                 <div style={{ marginBottom: `2rem` }}></div>
               </div>
+              <div className="column is-4">
+              </div>
             </div>
           </div>
         </div>
