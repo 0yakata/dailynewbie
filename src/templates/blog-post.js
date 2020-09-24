@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 import { 
   FacebookShareButton, 
@@ -122,13 +123,38 @@ const BlogPost = ({ data }) => {
           <Helmet titleTemplate="%s | にわかストリートジャーナル">
             <title>{`${post.frontmatter.title}`}</title>
             <meta name="description" content={`${post.frontmatter.description}`} />
-            <meta property="og:site_name" content={post.frontmatter.title} />
-            <meta property="og:image" content={post.frontmatter.featuredimage} />
+            <meta property="og:site_name" content="にわかストリートジャーナル" />
+            <meta property="og:title" content={post.frontmatter.title+' | にわかストリートジャーナル'} />
             <meta property="og:type" content="article" />
+            <meta
+              property="og:image"
+              content={post.frontmatter.featuredimage ? (
+                <div className="featured-thumbnail">
+                  <PreviewCompatibleImage
+                    imageInfo={{
+                      image: post.frontmatter.featuredimage,
+                      alt: `${post.frontmatter.title}`,
+                    }}
+                  />
+                </div>
+              ) : null}
+            />
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:title" content={post.frontmatter.title} />
+            <meta name="twitter:title" content={post.frontmatter.title+' | にわかストリートジャーナル'} />
             <meta name="twitter:description" content={post.frontmatter.description} />
-            <meta name="twitter:image" content={post.frontmatter.featuredimage} />
+            <meta
+              name="twitter:image"
+              content={post.frontmatter.featuredimage ? (
+                <div className="featured-thumbnail">
+                  <PreviewCompatibleImage
+                    imageInfo={{
+                      image: post.frontmatter.featuredimage,
+                      alt: `${post.frontmatter.title}`,
+                    }}
+                  />
+                </div>
+              ) : null}
+            />
           </Helmet>
         }
         tags={post.frontmatter.tags}
