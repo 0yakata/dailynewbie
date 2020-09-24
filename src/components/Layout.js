@@ -47,7 +47,6 @@ const TemplateWrapper = ({ children }) => {
           property="og:image"
           content={`${withPrefix('/')}img/og-image.png`}
         />
-        <script data-ad-client="ca-pub-7465224301871178" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       </Helmet>
       <Navbar />
       <div>{children}</div>
