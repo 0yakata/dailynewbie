@@ -5,7 +5,6 @@ import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 import { 
   FacebookShareButton, 
@@ -112,6 +111,7 @@ BlogPostTemplate.propTypes = {
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
+  const imagePath = `https://www.dailynewbie.com/img/${post.frontmatter.featuredimage.relativePath}`;
 
   return (
     <Layout>
@@ -126,35 +126,11 @@ const BlogPost = ({ data }) => {
             <meta property="og:site_name" content="にわかストリートジャーナル" />
             <meta property="og:title" content={post.frontmatter.title+' | にわかストリートジャーナル'} />
             <meta property="og:type" content="article" />
-            <meta
-              property="og:image"
-              content={post.frontmatter.featuredimage ? (
-                <div className="featured-thumbnail">
-                  <PreviewCompatibleImage
-                    imageInfo={{
-                      image: post.frontmatter.featuredimage,
-                      alt: `${post.frontmatter.title}`,
-                    }}
-                  />
-                </div>
-              ) : null}
-            />
+            <meta property="og:image" content={imagePath} />
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content={post.frontmatter.title+' | にわかストリートジャーナル'} />
             <meta name="twitter:description" content={post.frontmatter.description} />
-            <meta
-              name="twitter:image"
-              content={post.frontmatter.featuredimage ? (
-                <div className="featured-thumbnail">
-                  <PreviewCompatibleImage
-                    imageInfo={{
-                      image: post.frontmatter.featuredimage,
-                      alt: `${post.frontmatter.title}`,
-                    }}
-                  />
-                </div>
-              ) : null}
-            />
+            <meta name="twitter:image" content={imagePath} />
           </Helmet>
         }
         tags={post.frontmatter.tags}
@@ -184,11 +160,7 @@ export const pageQuery = graphql`
         description
         tags
         featuredimage {
-          childImageSharp {
-            fluid(maxWidth: 200, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
+          relativePath
         }
       }
     }
