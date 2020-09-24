@@ -23,7 +23,6 @@ export const BlogPostTemplate = ({
   tags,
   title,
   helmet,
-  url,
 }) => {
   const PostContent = contentComponent || Content
 
@@ -45,6 +44,8 @@ export const BlogPostTemplate = ({
         </div>
       )
     }
+
+    const windowUrl = (typeof window !== 'undefined' && window.location.href) ? window.location.href : '';
 
   return (
     <section className="section">
@@ -91,7 +92,7 @@ export const BlogPostTemplate = ({
             ) : null}
             <div style={{ marginTop: `2rem` }}>
               <h4>シェア</h4>
-              <SNSSection title={title+' | にわかストリートジャーナル'} articleUrl={url} />
+              <SNSSection title={title+' | にわかストリートジャーナル'} articleUrl={windowUrl} />
             </div>
           </div>
         </div>
@@ -129,7 +130,6 @@ const BlogPost = ({ data }) => {
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
         date={post.frontmatter.date}
-        url={post.frontmatter.path}
       />
     </Layout>
   )
@@ -153,7 +153,6 @@ export const pageQuery = graphql`
         title
         description
         tags
-        path
       }
     }
   }
