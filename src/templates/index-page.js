@@ -12,12 +12,10 @@ export const IndexPageTemplate = ({
   <div>
     <section className="section section--gradient">
       <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-12">
-              <div className="content">
-                <BlogRoll />
-              </div>
+        <div className="columns">
+          <div className="column is-12">
+            <div className="content">
+              <BlogRoll />
             </div>
           </div>
         </div>
