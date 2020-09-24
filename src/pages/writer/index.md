@@ -14,7 +14,7 @@ title: メンバー紹介
 <a href="https://note.com/0yen_lan" target="_blank" rel="noopener noreferrer"><img src="https://www.dailynewbie.com/img/note.svg" width=24></a>
 <br>
 
-**付箋** @tag_comic
+**付箋** [@tag_comic](https://www.dailynewbie.com/tags/tag-comic/)
 
 <a href="https://twitter.com/tag_comic" target="_blank" rel="noopener noreferrer"><img src="https://www.dailynewbie.com/img/twitter.svg" width=24></a>&nbsp;
 <a href="https://tag298.blog.fc2.com/" target="_blank" rel="noopener noreferrer"><img src="https://www.dailynewbie.com/img/homepage.svg" width=24></a>
