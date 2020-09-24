@@ -53,22 +53,24 @@ export const BlogPostTemplate = ({
         <div className="columns">
           <div className="column is-8 is-offset-1">
             <table width="100%">
-              <tr>
-                <td>
-                  {tags && tags.length ? (              
-                    <ul className="taglist">
-                      {tags.map((tag) => (
-                        <li key={tag + `tag`}>
-                          <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                        </li>
-                      ))}
-                    </ul>
-                  ) : null}
-                </td>
-                <td align="right">
-                  {date}
-                </td>
-              </tr>
+              <tbody>
+                <tr>
+                  <td>
+                    {tags && tags.length ? (              
+                      <ul className="taglist">
+                        {tags.map((tag) => (
+                          <li key={tag + `tag`}>
+                            <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                          </li>
+                        ))}
+                      </ul>
+                    ) : null}
+                  </td>
+                  <td align="right">
+                    {date}
+                  </td>
+                </tr>
+              </tbody>
             </table>
             <div className="title is-size-3 has-text-weight-bold is-bold-light">
               {title}
@@ -127,7 +129,7 @@ const BlogPost = ({ data }) => {
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
         date={post.frontmatter.date}
-        url={window.location.href}
+        url={post.frontmatter.path}
       />
     </Layout>
   )
@@ -151,6 +153,7 @@ export const pageQuery = graphql`
         title
         description
         tags
+        path
       }
     }
   }

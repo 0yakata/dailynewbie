@@ -47,6 +47,7 @@ const Footer = class extends React.Component {
                     style={{ width: '1em', height: '1em' }}
                   />
                 </a>
+                <div style={{ marginBottom: `2rem` }}></div>
               </div>
             </div>
           </div>
