@@ -12,12 +12,12 @@ module.exports = {
         head: true,
       }
     },
-    {
+    /* {
       resolve: `gatsby-plugin-google-adsense`,
       options: {
           publisherId: `ca-pub-7465224301871178`
       },
-  },
+    }, */
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {

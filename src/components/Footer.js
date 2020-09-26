@@ -36,6 +36,7 @@ const Footer = class extends React.Component {
                     </li>
                   </ul>
                 </section>
+                <div style={{ marginBottom: `1rem` }}></div>
               </div>
               <div className="column is-4 social">
                 <p><img src={logo} alt="NSJ" style={{ width: '200px' }} /></p>
@@ -47,7 +48,7 @@ const Footer = class extends React.Component {
                     style={{ width: '1em', height: '1em' }}
                   />
                 </a>
-                <div style={{ marginBottom: `2rem` }}></div>
+                <div style={{ marginBottom: `1rem` }}></div>
               </div>
               <div className="column is-4">
               </div>
