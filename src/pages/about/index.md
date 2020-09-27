@@ -26,4 +26,4 @@ title: このサイトについて
 
 ### お問い合わせ先
 
-<div class="twitter"><a href="https://twitter.com/messages/compose?recipient_id=1298740922981572609&ref_src=twsrc%5Etfw" class="twitter-dm-button" data-screen-name="DailyNewbie" data-show-count="false">Message @DailyNewbie</a>{<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>}</div>までお願いします。
+<div class="twitter"><a href="https://twitter.com/messages/compose?recipient_id=1298740922981572609&ref_src=twsrc%5Etfw" class="twitter-dm-button" data-screen-name="DailyNewbie" data-show-count="false">Message @DailyNewbie</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>までお願いします。</div>
