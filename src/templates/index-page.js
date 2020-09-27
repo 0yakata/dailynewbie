@@ -6,7 +6,6 @@ import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
 
 import { graphql } from 'gatsby'
-import { withPrefix } from 'gatsby'
 
 export const IndexPageTemplate = ({
   title
@@ -43,11 +42,11 @@ const IndexPage = ({ data }) => {
             <meta property="og:site_name" content="にわかストリートジャーナル" />
             <meta property="og:title" content={frontmatter.title} />
             <meta property="og:type" content="website" />
-            <meta property="og:image" content={`${withPrefix('/')}img/og-image.jpg`} />
+            <meta property="og:image" content="https://www.dailynewbie.com/img/og-image.jpg" />
             <meta name="twitter:card" content="summary" />
             <meta name="twitter:title" content={frontmatter.title} />
             <meta name="twitter:description" content={frontmatter.description} />
-            <meta name="twitter:image" content={`${withPrefix('/')}img/og-image.jpg`} />
+            <meta name="twitter:image" content="https://www.dailynewbie.com/img/og-image.jpg" />
           </Helmet>
         }
       />
