@@ -52,7 +52,7 @@ export const BlogPostTemplate = ({
       {helmet || ''}
       <div className="container content">
         <div className="columns">
-          <div className="column is-8 is-offset-1">
+          <div className="column is-7 is-offset-1">
             <table width="100%">
               <tbody>
                 <tr>
