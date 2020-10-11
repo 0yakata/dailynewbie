@@ -18,11 +18,11 @@ collections:
     label: "Blog"
     folder: "src/pages/blog"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}"
+    slug: '{{fields.slug}}'
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "URL", name: "url", widget: "date", format: YYYY-MM-DD, date_format: YYYY-MM-DD, time_format: false, required: false}
+      - {label: "URL", name: "slug", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime", format: YYYY-MM-DDTHH:mm:ss}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Featured Image", name: "featuredimage", widget: image}
