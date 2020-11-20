@@ -26,7 +26,7 @@ const Footer = class extends React.Component {
                     </li>
                     <li>
                       <Link className="navbar-item" to="/writer">
-                        メンバー紹介
+                        アカウント紹介
                       </Link>
                     </li>
                     <li>

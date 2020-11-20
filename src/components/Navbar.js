@@ -66,7 +66,7 @@ const Navbar = class extends React.Component {
                 タグ一覧
               </Link>
               <Link className="navbar-item" to="/writer">
-                メンバー紹介
+                アカウント紹介
               </Link>
               <Link className="navbar-item" to="/about">
                 このサイトについて
