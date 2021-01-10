@@ -31,7 +31,6 @@ collections:
 
   - name: "pages"
     label: "Pages"
-    create: true
     files:
       - file: "src/pages/about/index.md"
         label: "About"
@@ -45,5 +44,12 @@ collections:
         name: "writer"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "writer-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/links/index.md"
+        label: "Links"
+        name: "links"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "links-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}

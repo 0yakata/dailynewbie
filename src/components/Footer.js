@@ -34,6 +34,11 @@ const Footer = class extends React.Component {
                         このサイトについて
                       </Link>
                     </li>
+                    <li>
+                      <Link className="navbar-item" to="/links">
+                        リンク集
+                      </Link>
+                    </li>
                   </ul>
                 </section>
                 <div style={{ marginBottom: `1rem` }}></div>
