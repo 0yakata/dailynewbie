@@ -1,7 +1,7 @@
 ---
 templateKey: writer-page
 path: /writer
-title: アカウント紹介
+title: ライター紹介
 ---
 **高丸ヘッド** @takamaru_head
 

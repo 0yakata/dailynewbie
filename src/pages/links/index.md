@@ -1,5 +1,5 @@
 ---
 templateKey: links-page
 path: /links
-title: アカウント紹介
+title: リンク集
 ---
