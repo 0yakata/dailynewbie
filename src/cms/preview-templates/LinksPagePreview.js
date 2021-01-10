@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { LinksPageTemplate } from '../../templates/Links-page'
+import { LinksPageTemplate } from '../../templates/links-page'
 
 const LinksPagePreview = ({ entry, widgetFor }) => (
   <LinksPageTemplate

@@ -17,7 +17,6 @@ collections:
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
-    create: true
     slug: '{{fields.slug}}'
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
